@@ -36,6 +36,10 @@ assets/
  └── themes/
 dist/
 build/
+![Screenshot 2025-04-22 002934](https://github.com/user-attachments/assets/5c21811f-c58e-4259-8244-1993b9fb3991)
+![Screenshot 2025-04-27 231340](https://github.com/user-attachments/assets/b2ff71b4-b4a8-4b9e-aee2-4bbc13b08031)
+
+
 
 SECOND PROJECT:-
 
@@ -68,4 +72,6 @@ This project was developed as part of my **CodSoft Internship** to practice GUI 
    ```bash
    git clone https://github.com/your-username/Rock-Paper-Scissors-GUI-Game-Python.git
 ![Screenshot 2025-04-27 224515](https://github.com/user-attachments/assets/3e5520a4-7c3e-4911-9252-b0e309ba9058)
+![Screenshot 2025-04-27 231140](https://github.com/user-attachments/assets/96fb25b6-52ee-4e6a-9d3b-67fbec54f7ed)
+
 
