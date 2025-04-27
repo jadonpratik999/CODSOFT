@@ -70,7 +70,7 @@ This project was developed as part of my **CodSoft Internship** to practice GUI 
 1. Make sure you have **Python 3.x** installed.
 2. Clone this repository:
    ```bash
-   git clone https://github.com/your-jadonpratik999/Rock-Paper-Scissors-GUI-Game-Python.git
+   git clone https://github.com/jadonpratik999/Rock-Paper-Scissors-GUI-Game-Python.git
 ![Screenshot 2025-04-27 224515](https://github.com/user-attachments/assets/3e5520a4-7c3e-4911-9252-b0e309ba9058)
 ![Screenshot 2025-04-27 231140](https://github.com/user-attachments/assets/96fb25b6-52ee-4e6a-9d3b-67fbec54f7ed)
 
