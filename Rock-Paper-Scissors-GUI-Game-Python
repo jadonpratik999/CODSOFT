@@ -1,0 +1,28 @@
+# 🎮 Rock-Paper-Scissors - GUI Game (Python & Tkinter)
+
+Welcome to my fun Rock-Paper-Scissors Game built with **Python** and **Tkinter**!  
+This project was developed as part of my **CodSoft Internship** to practice GUI programming and game logic.
+
+## ✨ Features
+
+- Smooth **Graphical User Interface (GUI)** using Tkinter
+- **Countdown Animation** before each round (Rock...Paper...Scissors...Shoot!)
+- **Score Tracking** for both Player and Computer
+- **Reset Game** button to start fresh anytime
+- Stylish **themed buttons** with emojis and modern fonts
+- **Responsive layout** with centered icons and labels
+
+## 🚀 Technologies Used
+
+- Python 🐍
+- Tkinter (Python's built-in GUI library)
+- Random module
+- Threading for smooth animations
+- Time module for countdown effects
+
+## 🎯 How to Run
+
+1. Make sure you have **Python 3.x** installed.
+2. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/Rock-Paper-Scissors-GUI-Game-Python.git
