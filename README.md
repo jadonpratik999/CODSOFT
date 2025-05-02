@@ -78,6 +78,7 @@ This project was developed as part of my **CodSoft Internship** to practice GUI 
 THIRD PROJECT :-
 
 📒 Smart Contact Book
+
 🔹 Developed for CodSoft Internship – Python Developer Track
 The Smart Contact Book is a desktop application built with Python, Tkinter, and SQLite to manage personal or business contacts efficiently. Designed with a clean and responsive graphical user interface, this app allows users to:
 
@@ -116,4 +117,7 @@ README.md             # Project documentation
 
 📌 Purpose
 This project was developed as part of the CodSoft Internship Program to demonstrate practical skills in Python GUI development and database integration. It showcases how to build fully functional desktop applications using core Python libraries.
+![Screenshot 2025-05-02 215417](https://github.com/user-attachments/assets/a911fdba-c33a-45f7-b7c7-d52af5e2be71)
+![Screenshot 2025-05-02 215443](https://github.com/user-attachments/assets/dc09af7d-d9af-430c-8892-3a477e6a67ab)
+
 
