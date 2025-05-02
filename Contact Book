@@ -1,0 +1,170 @@
+import sqlite3
+import tkinter as tk
+from tkinter import messagebox, simpledialog
+
+# ------------------ DATABASE FUNCTIONS ------------------
+
+def create_database():
+    conn = sqlite3.connect("contacts.db")
+    c = conn.cursor()
+    c.execute('''CREATE TABLE IF NOT EXISTS contacts (
+                    id INTEGER PRIMARY KEY,
+                    name TEXT NOT NULL,
+                    phone TEXT NOT NULL,
+                    email TEXT,
+                    address TEXT
+                )''')
+    conn.commit()
+    conn.close()
+
+def add_contact(name, phone, email, address):
+    conn = sqlite3.connect("contacts.db")
+    c = conn.cursor()
+    c.execute("INSERT INTO contacts (name, phone, email, address) VALUES (?, ?, ?, ?)",
+              (name, phone, email, address))
+    conn.commit()
+    conn.close()
+
+def get_contacts():
+    conn = sqlite3.connect("contacts.db")
+    c = conn.cursor()
+    c.execute("SELECT id, name, phone FROM contacts")
+    contacts = c.fetchall()
+    conn.close()
+    return contacts
+
+def search_contact(keyword):
+    conn = sqlite3.connect("contacts.db")
+    c = conn.cursor()
+    c.execute("SELECT * FROM contacts WHERE name LIKE ? OR phone LIKE ?", 
+              (f"%{keyword}%", f"%{keyword}%"))
+    results = c.fetchall()
+    conn.close()
+    return results
+
+def update_contact(contact_id, name, phone, email, address):
+    conn = sqlite3.connect("contacts.db")
+    c = conn.cursor()
+    c.execute("UPDATE contacts SET name=?, phone=?, email=?, address=? WHERE id=?",
+              (name, phone, email, address, contact_id))
+    conn.commit()
+    conn.close()
+
+def delete_contact(contact_id):
+    conn = sqlite3.connect("contacts.db")
+    c = conn.cursor()
+    c.execute("DELETE FROM contacts WHERE id=?", (contact_id,))
+    conn.commit()
+    conn.close()
+
+# ------------------ GUI FUNCTIONS ------------------
+
+def refresh_contacts():
+    contact_list.delete(0, tk.END)
+    for contact in get_contacts():
+        contact_list.insert(tk.END, f"{contact[0]} - {contact[1]} ({contact[2]})")
+
+def add_contact_ui():
+    name = entry_name.get()
+    phone = entry_phone.get()
+    email = entry_email.get()
+    address = entry_address.get()
+    if name and phone:
+        add_contact(name, phone, email, address)
+        refresh_contacts()
+        clear_entries()
+    else:
+        messagebox.showwarning("Missing Info", "Name and Phone are required!")
+
+def clear_entries():
+    entry_name.delete(0, tk.END)
+    entry_phone.delete(0, tk.END)
+    entry_email.delete(0, tk.END)
+    entry_address.delete(0, tk.END)
+
+def search_contact_ui():
+    keyword = entry_search.get()
+    results = search_contact(keyword)
+    contact_list.delete(0, tk.END)
+    for contact in results:
+        contact_list.insert(tk.END, f"{contact[0]} - {contact[1]} ({contact[2]})")
+
+def delete_selected_contact():
+    try:
+        selected = contact_list.get(contact_list.curselection())
+        contact_id = int(selected.split(" - ")[0])
+        delete_contact(contact_id)
+        refresh_contacts()
+    except:
+        messagebox.showerror("Error", "No contact selected.")
+
+def update_selected_contact():
+    try:
+        selected = contact_list.get(contact_list.curselection())
+        contact_id = int(selected.split(" - ")[0])
+        contact = search_contact(str(contact_id))[0]
+
+        name = simpledialog.askstring("Update Name", "Enter new name:", initialvalue=contact[1])
+        phone = simpledialog.askstring("Update Phone", "Enter new phone:", initialvalue=contact[2])
+        email = simpledialog.askstring("Update Email", "Enter new email:", initialvalue=contact[3])
+        address = simpledialog.askstring("Update Address", "Enter new address:", initialvalue=contact[4])
+
+        if name and phone:
+            update_contact(contact_id, name, phone, email, address)
+            refresh_contacts()
+        else:
+            messagebox.showwarning("Missing Info", "Name and Phone are required!")
+    except:
+        messagebox.showerror("Error", "No contact selected.")
+
+# ------------------ MAIN UI ------------------
+
+create_database()
+window = tk.Tk()
+window.title("Contact Book")
+window.geometry("700x550")
+window.configure(bg="#f2f2f2")
+
+header = tk.Label(window, text="📒 Contact Book", font=("Arial", 20, "bold"), bg="#f2f2f2", fg="#333")
+header.pack(pady=10)
+
+form_frame = tk.Frame(window, bg="#f2f2f2")
+form_frame.pack(pady=5)
+
+# Input Fields
+labels = ["Name", "Phone", "Email", "Address"]
+entries = []
+
+for i, label_text in enumerate(labels):
+    tk.Label(form_frame, text=label_text, font=("Arial", 12), bg="#f2f2f2").grid(row=i, column=0, sticky="w", padx=10, pady=5)
+    entry = tk.Entry(form_frame, width=40, font=("Arial", 11))
+    entry.grid(row=i, column=1, padx=10, pady=5)
+    entries.append(entry)
+
+entry_name, entry_phone, entry_email, entry_address = entries
+
+tk.Button(window, text="➕ Add Contact", bg="#4CAF50", fg="white", font=("Arial", 12), width=20, command=add_contact_ui).pack(pady=10)
+
+# Search Section
+search_frame = tk.Frame(window, bg="#f2f2f2")
+search_frame.pack(pady=5)
+
+tk.Label(search_frame, text="🔍 Search:", font=("Arial", 12), bg="#f2f2f2").pack(side=tk.LEFT, padx=5)
+entry_search = tk.Entry(search_frame, font=("Arial", 11), width=30)
+entry_search.pack(side=tk.LEFT, padx=5)
+tk.Button(search_frame, text="Search", bg="#2196F3", fg="white", command=search_contact_ui).pack(side=tk.LEFT, padx=5)
+
+# Contact Listbox
+contact_list = tk.Listbox(window, width=70, height=10, font=("Arial", 11))
+contact_list.pack(pady=10)
+
+# Action Buttons
+action_frame = tk.Frame(window, bg="#f2f2f2")
+action_frame.pack(pady=10)
+
+tk.Button(action_frame, text="✏️ Update", bg="#FF9800", fg="white", width=15, command=update_selected_contact).grid(row=0, column=0, padx=10)
+tk.Button(action_frame, text="❌ Delete", bg="#F44336", fg="white", width=15, command=delete_selected_contact).grid(row=0, column=1, padx=10)
+tk.Button(action_frame, text="🔄 Refresh", bg="#9C27B0", fg="white", width=15, command=refresh_contacts).grid(row=0, column=2, padx=10)
+
+refresh_contacts()
+window.mainloop()
