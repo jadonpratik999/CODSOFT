@@ -83,32 +83,24 @@ THIRD PROJECT :-
 The Smart Contact Book is a desktop application built with Python, Tkinter, and SQLite to manage personal or business contacts efficiently. Designed with a clean and responsive graphical user interface, this app allows users to:
 
 ➕ Add new contacts with name, phone, email, and address
-
 🔍 Search for contacts by name or phone number
-
 📝 Update existing contact details
-
 ❌ Delete contacts from the list
-
 📃 View a list of all saved contacts
-
 💾 Store all data locally using SQLite
 
 🚀 Technologies Used
-Python 3
 
-Tkinter – for the graphical user interface
-
-SQLite – for local database management
+*Python 3
+*Tkinter – for the graphical user interface
+*SQLite – for local database management
 
 🎯 Key Features
-User-friendly and attractive interface
 
-Real-time contact list updates
-
-Input validation and error handling
-
-Persistent data storage using SQL database
+*User-friendly and attractive interface
+*Real-time contact list updates
+*Input validation and error handling
+*Persistent data storage using SQL database
 
 🧩 Project Structure
 contact_book.py       # Main application file with GUI and logic
@@ -117,6 +109,7 @@ README.md             # Project documentation
 
 📌 Purpose
 This project was developed as part of the CodSoft Internship Program to demonstrate practical skills in Python GUI development and database integration. It showcases how to build fully functional desktop applications using core Python libraries.
+
 ![Screenshot 2025-05-02 215417](https://github.com/user-attachments/assets/a911fdba-c33a-45f7-b7c7-d52af5e2be71)
 ![Screenshot 2025-05-02 215443](https://github.com/user-attachments/assets/dc09af7d-d9af-430c-8892-3a477e6a67ab)
 
