@@ -113,4 +113,28 @@ This project was developed as part of the CodSoft Internship Program to demonstr
 ![Screenshot 2025-05-02 215417](https://github.com/user-attachments/assets/a911fdba-c33a-45f7-b7c7-d52af5e2be71)
 ![Screenshot 2025-05-02 215443](https://github.com/user-attachments/assets/dc09af7d-d9af-430c-8892-3a477e6a67ab)
 
+FOURTH PROJECT :-
+
+🔐 Password Generator – CodSoft Project
+A simple yet powerful Password Generator GUI application built with Python and Tkinter. This project is part of the CodSoft Internship and demonstrates the use of randomization, user interaction, and GUI design to create secure and customizable passwords.
+
+🧰 Features
+🎨 Attractive and Responsive GUI using Tkinter
+🔒 Generates strong, random passwords with uppercase, lowercase, digits, and symbols
+🖱️ User input for password length
+📋 Copy to clipboard feature
+🚨 Error handling for invalid input
+
+💻 Tech Stack
+Language: Python 3.x
+Libraries:
+tkinter – for GUI
+random, string – for password generation
+
+![Screenshot 2025-05-03 230032](https://github.com/user-attachments/assets/cd296bef-a80d-4a8d-8935-fc06450d9835)
+![Screenshot 2025-05-03 230007](https://github.com/user-attachments/assets/e56acc52-a09c-43fa-a2c8-a16afde841ae)
+
+
+
+
 
