@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/e8016971-a5e9-42c6-95fe-b560d7fcdf92)# CODSOFT
+# CODSOFT
 :  🔹 CodSoft Python Projects Welcome to the CodSoft Python Projects repository! This repository contains a collection of Python-based projects completed as part of the CodSoft Internship/Training Program. Each project showcases practical implementations of core Python concepts, problem-solving skills, and real-world applications.
 
 🧮 Dark Themed Scientific Calculator App
