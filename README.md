@@ -41,7 +41,7 @@ build/
 
 
 
-SECOND PROJECT :-
+#SECOND PROJECT :-
 
 # 🎮 Rock-Paper-Scissors - GUI Game (Python & Tkinter)
 
@@ -75,7 +75,7 @@ This project was developed as part of my **CodSoft Internship** to practice GUI 
 ![Screenshot 2025-04-27 231140](https://github.com/user-attachments/assets/96fb25b6-52ee-4e6a-9d3b-67fbec54f7ed)
 
 
-THIRD PROJECT :-
+#THIRD PROJECT :-
 
 📒 Smart Contact Book
 
@@ -113,7 +113,7 @@ This project was developed as part of the CodSoft Internship Program to demonstr
 ![Screenshot 2025-05-02 215417](https://github.com/user-attachments/assets/a911fdba-c33a-45f7-b7c7-d52af5e2be71)
 ![Screenshot 2025-05-02 215443](https://github.com/user-attachments/assets/dc09af7d-d9af-430c-8892-3a477e6a67ab)
 
-FOURTH PROJECT :-
+#FOURTH PROJECT :-
 
 🔐 Password Generator – CodSoft Project
 A simple yet powerful Password Generator GUI application built with Python and Tkinter. This project is part of the CodSoft Internship and demonstrates the use of randomization, user interaction, and GUI design to create secure and customizable passwords.
@@ -134,7 +134,7 @@ random, string – for password generation
 ![Screenshot 2025-05-03 230007](https://github.com/user-attachments/assets/4b8a83ba-3574-4a5a-b880-eb572904039a)
 ![Screenshot 2025-05-03 230032](https://github.com/user-attachments/assets/ccbfdada-302a-4ae7-b6b5-1005f3cdb0b8)
 
-FIFTH PROJECT :-
+#FIFTH PROJECT :-
 
 📝 To-Do List Manager — CodSoft Internship Project
 This is a colorful and user-friendly To-Do List application built using Python and Tkinter as part of my CodSoft Internship. It helps users create, update, delete, and persistently track their daily tasks with a beautiful interface.
