@@ -131,6 +131,11 @@ Libraries:
 tkinter – for GUI
 random, string – for password generation
 
+![Screenshot 2025-05-03 230007](https://github.com/user-attachments/assets/4b8a83ba-3574-4a5a-b880-eb572904039a)
+![Screenshot 2025-05-03 230032](https://github.com/user-attachments/assets/ccbfdada-302a-4ae7-b6b5-1005f3cdb0b8)
+
+
+
 
 
 
