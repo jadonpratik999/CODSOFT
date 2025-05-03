@@ -1,0 +1,99 @@
+import tkinter as tk
+from tkinter import messagebox, simpledialog
+import os
+
+# === Constants ===
+TASK_FILE = "tasks.txt"
+
+# === Functions ===
+def load_tasks():
+    if os.path.exists(TASK_FILE):
+        with open(TASK_FILE, "r") as f:
+            for line in f:
+                task = line.strip()
+                if task:
+                    task_listbox.insert(tk.END, task)
+
+def save_tasks():
+    tasks = task_listbox.get(0, tk.END)
+    with open(TASK_FILE, "w") as f:
+        for task in tasks:
+            f.write(task + "\n")
+
+def add_task():
+    task = task_entry.get().strip()
+    if task:
+        task_listbox.insert(tk.END, task)
+        task_entry.delete(0, tk.END)
+        save_tasks()
+    else:
+        messagebox.showwarning("Input Error", "Please enter a task.")
+
+def delete_task():
+    selected = task_listbox.curselection()
+    if selected:
+        task_listbox.delete(selected)
+        save_tasks()
+    else:
+        messagebox.showwarning("Selection Error", "Please select a task to delete.")
+
+def update_task():
+    selected = task_listbox.curselection()
+    if selected:
+        old_task = task_listbox.get(selected)
+        new_task = simpledialog.askstring("Update Task", "Edit your task:", initialvalue=old_task)
+        if new_task:
+            task_listbox.delete(selected)
+            task_listbox.insert(selected, new_task.strip())
+            save_tasks()
+    else:
+        messagebox.showinfo("Info", "Please select a task to update.")
+
+# === GUI Setup ===
+root = tk.Tk()
+root.title("🎯 To-Do List Manager")
+root.geometry("500x550")
+root.config(bg="#2c3e50")
+root.resizable(False, False)
+
+# === Widgets ===
+tk.Label(root, text="📝 My To-Do List", font=("Helvetica", 22, "bold"),
+         fg="#f1c40f", bg="#2c3e50").pack(pady=20)
+
+# Input Frame
+input_frame = tk.Frame(root, bg="#2c3e50")
+input_frame.pack(pady=10)
+
+task_entry = tk.Entry(input_frame, font=("Helvetica", 14), width=30, bd=3, relief="sunken")
+task_entry.pack(side=tk.LEFT, padx=10)
+
+tk.Button(input_frame, text="Add", font=("Helvetica", 12, "bold"), bg="#27ae60", fg="white",
+          activebackground="#2ecc71", command=add_task).pack(side=tk.LEFT)
+
+# Listbox
+task_listbox = tk.Listbox(root, font=("Helvetica", 13), width=45, height=10,
+                          bg="#ecf0f1", fg="#2c3e50", bd=2, relief="groove",
+                          selectbackground="#3498db", selectforeground="white")
+task_listbox.pack(pady=20)
+
+# Button Frame
+btn_frame = tk.Frame(root, bg="#2c3e50")
+btn_frame.pack(pady=10)
+
+tk.Button(btn_frame, text="Update Task", font=("Helvetica", 12, "bold"),
+          bg="#f39c12", fg="white", activebackground="#f1c40f",
+          width=15, command=update_task).grid(row=0, column=0, padx=10)
+
+tk.Button(btn_frame, text="Delete Task", font=("Helvetica", 12, "bold"),
+          bg="#c0392b", fg="white", activebackground="#e74c3c",
+          width=15, command=delete_task).grid(row=0, column=1, padx=10)
+
+# Footer
+tk.Label(root, text="Made with ❤️ for CodSoft", font=("Helvetica", 10),
+         fg="#bdc3c7", bg="#2c3e50").pack(side=tk.BOTTOM, pady=10)
+
+# Load existing tasks
+load_tasks()
+
+# Start the app
+root.mainloop()
