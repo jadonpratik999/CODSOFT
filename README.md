@@ -1,4 +1,4 @@
-# CODSOFT
+![image](https://github.com/user-attachments/assets/e8016971-a5e9-42c6-95fe-b560d7fcdf92)# CODSOFT
 :  🔹 CodSoft Python Projects Welcome to the CodSoft Python Projects repository! This repository contains a collection of Python-based projects completed as part of the CodSoft Internship/Training Program. Each project showcases practical implementations of core Python concepts, problem-solving skills, and real-world applications.
 
 🧮 Dark Themed Scientific Calculator App
@@ -133,6 +133,26 @@ random, string – for password generation
 
 ![Screenshot 2025-05-03 230007](https://github.com/user-attachments/assets/4b8a83ba-3574-4a5a-b880-eb572904039a)
 ![Screenshot 2025-05-03 230032](https://github.com/user-attachments/assets/ccbfdada-302a-4ae7-b6b5-1005f3cdb0b8)
+
+FIFTH PROJECT :-
+
+📝 To-Do List Manager — CodSoft Internship Project
+This is a colorful and user-friendly To-Do List application built using Python and Tkinter as part of my CodSoft Internship. It helps users create, update, delete, and persistently track their daily tasks with a beautiful interface.
+
+🚀 Features :-
+✅ Add new tasks easily
+📝 Edit/update existing tasks
+❌ Delete selected tasks
+💾 Automatically saves tasks to tasks.txt
+📥 Loads tasks on startup
+🎨 Visually appealing and modern GUI
+💻 Built with tkinter (no external libraries)
+
+📸 Screenshots :-
+![Screenshot 2025-05-03 235325](https://github.com/user-attachments/assets/1a1eb0a9-408b-4bb6-9928-7a8dbb98b360)
+![Screenshot 2025-05-03 235423](https://github.com/user-attachments/assets/5a2bb032-452c-42ec-8895-2ee1254161f1)
+
+
 
 
 
