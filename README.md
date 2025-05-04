@@ -142,7 +142,7 @@ It applies Alpha-Beta Pruning to eliminate unnecessary branches, making it effic
 
 Result: It can never be beaten
 
-THIRD PROJECT :-
+#THIRD PROJECT :-
 
 📚 Recommendation System
 
