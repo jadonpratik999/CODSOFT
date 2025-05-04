@@ -30,6 +30,42 @@ Jupyter Notebooks
 🌟 Acknowledgements
 Thanks to CodSoft for providing this internship opportunity and helping me gain hands-on experience in AI and ML.
 
+FIRST PROJECT :-
+
+🤖 Rule-Based Chatbot (Python + Tkinter GUI)
+A simple and colorful rule-based chatbot built using Python. It uses pattern matching with re and provides a friendly GUI using Tkinter.
+
+✨ Features
+✅ Pattern-based responses (greetings, help, time, weather, etc.)
+✅ Color-coded GUI with user-friendly design
+✅ Scrollable chat window
+✅ Easy to customize and extend
+✅ Great for beginners learning about chatbot logic and GUI development
+
+🖼️ Screenshot
+![Screenshot 2025-05-04 110326](https://github.com/user-attachments/assets/252ea36d-454a-4d56-9404-7beddbbc2ee5)
+![Screenshot 2025-05-04 110602](https://github.com/user-attachments/assets/969fe98c-3b69-430a-b327-7db5176bedd1)
+
+📋 Example Questions You Can Ask
+"Hi"
+"How are you?"
+"What's your name?"
+"What time is it?"
+"Tell me the weather"
+"Bye"
+
+📁 Files
+chatbot_gui.py: Main Python file with GUI + chatbot logic
+README.md: Project documentation
+
+💡 Future Improvements (Optional Ideas)
+Add voice input/output
+Add NLP-based responses (using NLTK or spaCy)
+Add a dark/light theme toggle
+Add external API integration for weather, jokes, etc.
+
+
+
 🔹 CodSoft Python Projects Welcome to the CodSoft Python Projects repository! This repository contains a collection of Python-based projects completed as part of the CodSoft Internship/Training Program. Each project showcases practical implementations of core Python concepts, problem-solving skills, and real-world applications.
 
 🧮 Dark Themed Scientific Calculator App
