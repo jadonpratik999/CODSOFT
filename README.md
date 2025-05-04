@@ -30,7 +30,7 @@ Jupyter Notebooks
 🌟 Acknowledgements
 Thanks to CodSoft for providing this internship opportunity and helping me gain hands-on experience in AI and ML.
 
-FIRST PROJECT :-
+#FIRST PROJECT :-
 
 🤖 Rule-Based Chatbot (Python + Tkinter GUI)
 A simple and colorful rule-based chatbot built using Python. It uses pattern matching with re and provides a friendly GUI using Tkinter.
@@ -63,6 +63,7 @@ Add voice input/output
 Add NLP-based responses (using NLTK or spaCy)
 Add a dark/light theme toggle
 Add external API integration for weather, jokes, etc.
+
 
 
 
