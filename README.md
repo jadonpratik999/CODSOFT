@@ -10,10 +10,8 @@ Model Evaluation & Optimization
 Real-world Problem Solving using AI
 
 📁 Projects Included
-📊 Iris Flower Classification – ML classification using scikit-learn
 🤖 AI Chatbot – A simple rule-based or NLP-powered chatbot
-🧠 Handwritten Digit Recognition – Deep Learning using MNIST dataset with TensorFlow/Keras
-📉 Stock Price Prediction – Time series forecasting with LSTM
+🎮 Tic-Tac-Toe AI (Python GUI + Dark Mode + Unbeatable AI)
 
 Each project folder contains:
 Source Code
@@ -63,6 +61,35 @@ Add voice input/output
 Add NLP-based responses (using NLTK or spaCy)
 Add a dark/light theme toggle
 Add external API integration for weather, jokes, etc.
+
+#SECOUND PROJECT :-
+
+🎮 Tic-Tac-Toe AI (Python GUI + Dark Mode + Unbeatable AI)
+An advanced, stylish Tic-Tac-Toe game built with Python Tkinter, featuring an unbeatable AI powered by the Minimax algorithm with Alpha-Beta Pruning, a clean dark theme, and a live score counter.
+
+✨ Features :-
+🤖 Unbeatable AI using Minimax + Alpha-Beta Pruning
+🌙 Dark-themed GUI with modern color palette
+🧮 Score tracking for Human vs AI
+🔁 Auto-reset after each game (win/lose/draw)
+🎯 Fully interactive Tkinter buttons with visual feedback
+
+📸 Preview :-
+![Screenshot 2025-05-04 112716](https://github.com/user-attachments/assets/80d45c6e-47ab-4b28-96f4-45e74bbc574b)
+![Screenshot 2025-05-04 112746](https://github.com/user-attachments/assets/e5397567-a283-4e55-a963-221d1bae4bf6)
+
+🎮 How to Play
+You (the human) are X
+The AI is O
+Click on any cell to make your move
+The AI will instantly counter with the best possible move
+Win or lose, the game resets and the score updates automatically
+
+🧠 How the AI Works
+The AI uses the Minimax algorithm to explore all possible outcomes
+It applies Alpha-Beta Pruning to eliminate unnecessary branches, making it efficient even in a small grid
+Result: It can never be beaten
+
 
 
 
