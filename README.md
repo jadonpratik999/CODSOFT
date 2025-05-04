@@ -142,6 +142,65 @@ It applies Alpha-Beta Pruning to eliminate unnecessary branches, making it effic
 
 Result: It can never be beaten
 
+THIRD PROJECT :-
+
+📚 Recommendation System
+
+This project presents a content-based recommendation system designed to suggest relevant items—such as movies, books, or products—based solely on item attributes rather than user interactions. Unlike collaborative filtering, which relies on user ratings or behavior patterns, this system focuses on analyzing features of the items themselves (e.g., genres, keywords, categories, descriptions).
+
+🔍 Key Features
+
+Content-Based Filtering: Uses item metadata (such as genre, author, tags, or product category) to compute similarity scores.
+
+TF-IDF & Cosine Similarity: For textual data like descriptions or keywords, the system applies TF-IDF vectorization and cosine similarity to identify and recommend similar items.
+
+Scalable & Lightweight: No dependency on user data; can be scaled easily for cold-start items or new users.
+
+Modular Design: Easy to extend with additional item features or hybrid approaches in the future.
+
+📦 Applications
+
+Movie Recommender: Recommends movies based on genre, plot keywords, and cast.
+
+Book Recommender: Suggests books based on author, genre, and summary.
+
+Product Recommender: Recommends similar products based on category, description, and specifications.
+
+🛠️ Technologies Used
+
+👨‍💻 Programming Language
+
+Python – Core programming language used for building the recommendation logic and data processing.
+
+📦 Libraries & Tools
+
+Pandas – For data manipulation and preprocessing.
+
+NumPy – For numerical computations and array operations.
+
+Scikit-learn – For implementing:
+
+TF-IDF Vectorizer (from sklearn.feature_extraction.text)
+
+Cosine Similarity (from sklearn.metrics.pairwise)
+
+NLTK / spaCy (optional) – For natural language processing tasks like tokenization or stopword removal.
+
+Matplotlib / Seaborn (optional) – For visualizing item similarities or recommendation patterns.
+
+🌐 User Interface (Optional)
+Tkinter / PyQt5 / Streamlit – To build a simple GUI or web-based interface for interacting with the recommendation engine.
+
+🗃️ Data Sources
+Custom CSV or JSON datasets containing item metadata (e.g., movies, books, or products).
+
+📸 Preview :-
+
+![Screenshot 2025-05-04 225048](https://github.com/user-attachments/assets/96f3280f-1df2-43d0-bb0d-6e49e8f96f62)
+![Screenshot 2025-05-04 225110](https://github.com/user-attachments/assets/f28edd3a-d2fd-4bef-aaa6-94a422dac1dc)
+
+
+
 
 
 
