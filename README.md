@@ -1,5 +1,36 @@
-# CODSOFT
-:  🔹 CodSoft Python Projects Welcome to the CodSoft Python Projects repository! This repository contains a collection of Python-based projects completed as part of the CodSoft Internship/Training Program. Each project showcases practical implementations of core Python concepts, problem-solving skills, and real-world applications.
+# 💼 CodSoft AI Internship Projects
+Welcome to my GitHub repository for the AI Internship at CodSoft! This repo contains the projects and tasks completed as part of the internship, showcasing practical applications of Artificial Intelligence and Machine Learning using Python and popular frameworks.
+
+🧠 Internship Overview
+During this internship, I worked on a variety of AI-focused projects that demonstrate skills in:
+Machine Learning (Supervised & Unsupervised Learning)
+Data Preprocessing & Feature Engineering
+Deep Learning (Neural Networks, CNNs)
+Model Evaluation & Optimization
+Real-world Problem Solving using AI
+
+📁 Projects Included
+📊 Iris Flower Classification – ML classification using scikit-learn
+🤖 AI Chatbot – A simple rule-based or NLP-powered chatbot
+🧠 Handwritten Digit Recognition – Deep Learning using MNIST dataset with TensorFlow/Keras
+📉 Stock Price Prediction – Time series forecasting with LSTM
+
+Each project folder contains:
+Source Code
+Dataset (or link)
+README with explanation
+Outputs/Results
+
+🔧 Tech Stack
+Python
+NumPy, Pandas, Matplotlib, Seaborn
+Scikit-learn, TensorFlow/Keras, NLTK
+Jupyter Notebooks
+
+🌟 Acknowledgements
+Thanks to CodSoft for providing this internship opportunity and helping me gain hands-on experience in AI and ML.
+
+🔹 CodSoft Python Projects Welcome to the CodSoft Python Projects repository! This repository contains a collection of Python-based projects completed as part of the CodSoft Internship/Training Program. Each project showcases practical implementations of core Python concepts, problem-solving skills, and real-world applications.
 
 🧮 Dark Themed Scientific Calculator App
 This is a sleek, modern desktop calculator application built using Python and Tkinter, featuring both basic and scientific modes. Designed with a stylish dark/light theme toggle, it brings a smooth user experience with hover effects, calculation history, and auto-clear logic.
