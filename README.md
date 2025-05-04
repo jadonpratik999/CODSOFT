@@ -11,18 +11,25 @@ Real-world Problem Solving using AI
 
 📁 Projects Included
 🤖 AI Chatbot – A simple rule-based or NLP-powered chatbot
+
 🎮 Tic-Tac-Toe AI (Python GUI + Dark Mode + Unbeatable AI)
 
 Each project folder contains:
+
 Source Code
+
 Dataset (or link)
+
 README with explanation
+
 Outputs/Results
 
 🔧 Tech Stack
 Python
 NumPy, Pandas, Matplotlib, Seaborn
+
 Scikit-learn, TensorFlow/Keras, NLTK
+
 Jupyter Notebooks
 
 🌟 Acknowledgements
@@ -34,10 +41,15 @@ Thanks to CodSoft for providing this internship opportunity and helping me gain 
 A simple and colorful rule-based chatbot built using Python. It uses pattern matching with re and provides a friendly GUI using Tkinter.
 
 ✨ Features
+
 ✅ Pattern-based responses (greetings, help, time, weather, etc.)
+
 ✅ Color-coded GUI with user-friendly design
+
 ✅ Scrollable chat window
+
 ✅ Easy to customize and extend
+
 ✅ Great for beginners learning about chatbot logic and GUI development
 
 🖼️ Screenshot
@@ -45,11 +57,17 @@ A simple and colorful rule-based chatbot built using Python. It uses pattern mat
 ![Screenshot 2025-05-04 110602](https://github.com/user-attachments/assets/969fe98c-3b69-430a-b327-7db5176bedd1)
 
 📋 Example Questions You Can Ask
+
 "Hi"
+
 "How are you?"
+
 "What's your name?"
+
 "What time is it?"
+
 "Tell me the weather"
+
 "Bye"
 
 📁 Files
